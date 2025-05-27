@@ -160,7 +160,7 @@ export function CharacterProfile() {
                 src="/protocol.svg" 
                 alt="Protocol" 
                 className="w-full h-full object-contain blur-[20px]"
-                style={{ opacity: 0.4 }}
+                style={{ opacity: 0.2 }}
               />
             </div>
             <div className="absolute inset-0">
@@ -168,7 +168,7 @@ export function CharacterProfile() {
                 src="/protocol.svg" 
                 alt="Protocol" 
                 className="w-full h-full object-contain blur-[10px]"
-                style={{ opacity: 0.6 }}
+                style={{ opacity: 0.4 }}
               />
             </div>
             {/* Main image */}
