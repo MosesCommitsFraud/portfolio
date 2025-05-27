@@ -13,7 +13,7 @@ export default function Page() {
 
         {/* Main interface container */}
         <div className="relative z-10 flex items-center justify-center min-h-screen p-8">
-          <div className="flex gap-8 max-w-7xl w-full">
+          <div className="flex gap-8 max-w-7xl w-half">
             {/* Character Profile Panel */}
             <CharacterProfile />
 
