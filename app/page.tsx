@@ -1,7 +1,7 @@
 "use client"
 
 import { Card } from "@/components/ui/card"
-import { MugshotBox } from "@/components/MugshotBox"
+import { AnalysisBox } from "@/components/AnalysisBox"
 
 export default function Page() {
   return (
@@ -140,7 +140,7 @@ export default function Page() {
             </div>
 
             {/* Incident Report Panel */}
-            <MugshotBox title="PSYCHO-PSYCHOLOGICAL ANALYSIS" date="LAMBDA: 02/02/2019">
+            <AnalysisBox title="PSYCHO-PSYCHOLOGICAL ANALYSIS" date="LAMBDA: 02/02/2019">
               <div>
                 <div className="text-red-400 text-sm font-mono uppercase tracking-wider mb-2">INCIDENT REPORT</div>
                 <div className="text-red-300 text-xs font-mono leading-relaxed">
@@ -206,7 +206,7 @@ export default function Page() {
                 <rect x="94" y="4" width="2" height="16" fill="#ff3b3b" />
                 <rect x="100" y="4" width="4" height="16" fill="#ff3b3b" />
               </svg>
-            </MugshotBox>
+            </AnalysisBox>
           </div>
         </div>
       </div>

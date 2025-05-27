@@ -6,7 +6,7 @@ interface AnalysisBoxProps {
   children: React.ReactNode
 }
 
-export function MugshotBox({ title, date, children }: AnalysisBoxProps) {
+export function AnalysisBox({ title, date, children }: AnalysisBoxProps) {
   return (
     <div className="w-96 relative">
       {/* Bottom SVG shape */}
