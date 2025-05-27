@@ -41,11 +41,25 @@ export function CharacterProfile() {
             opacity="1.0"
           />
         </svg>
-        {/* Bottom SVG shape */}
-        <svg className="absolute bottom-0 left-0 w-[350px] h-8 z-20" viewBox="0 0 350 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="0" y="16" width="350" height="16" fill="#1a0000" />
-          <polygon points="0,16 20,0 330,0 350,16" fill="#1a0000" />
-        </svg>
+        {/* Bottom Info Bar - Red with slanted right edge and text */}
+        <div
+          className="fixed w-[625px] h-[280px] z-50 px-4 font-mono text-black"
+          style={{
+            left: '259px',
+            bottom: '306px',
+            background: '#ff3b3b',
+            clipPath: 'polygon(100% 86%, 100% 91%, 96% 100%, 0 100%, 0 86%)',
+          }}
+        >
+          <span className="font-bold text-xs absolute left-4 top-4">MODEL LINE: 12.12AA</span>
+          <span className="font-bold text-xs absolute left-1/2 top-4 -translate-x-1/2">FIA DATABASE</span>
+          <span className="text-right text-[10px] leading-tight absolute right-4 top-4">
+            IMAGE NAME: NUX-131010<br />
+            IMAGE TYPE: ARM LINUX KERNEL IMAGE<br />
+            (LZO COMPRESSED)<br />
+            LOAD ADDRESS: 0x02000000
+          </span>
+        </div>
         <Card className="w-[350px] h-[600px] bg-black/80 border-2 border-red-500 shadow-none rounded-none relative overflow-visible">
           <div className="relative">
             <div className="p-6 h-full">
