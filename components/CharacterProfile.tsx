@@ -1,4 +1,7 @@
 import { Card } from "@/components/ui/card"
+import React, { useEffect, useRef, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import { cn } from "@/lib/utils";
 
 export function CharacterProfile() {
   return (
@@ -37,70 +40,21 @@ export function CharacterProfile() {
             xmlns="http://www.w3.org/2000/svg"
             overflow="visible"
           >
-            <defs>
-              {/* Brighter radial glow in all directions */}
-              <filter id="radial-glow" x="-800%" y="-500%" width="1700%" height="1100%" filterUnits="objectBoundingBox">
-                {/* Outer glow layer - much brighter and extends further */}
-                <feGaussianBlur stdDeviation="40" result="glow1" />
-                <feFlood floodColor="#ff3b3b" floodOpacity="0.15" result="color1" />
-                <feComposite in="color1" in2="glow1" operator="in" result="coloredGlow1" />
-
-                {/* Medium glow layer */}
-                <feGaussianBlur stdDeviation="20" result="glow2" />
-                <feFlood floodColor="#ff3b3b" floodOpacity="0.4" result="color2" />
-                <feComposite in="color2" in2="glow2" operator="in" result="coloredGlow2" />
-
-                {/* Inner glow layer */}
-                <feGaussianBlur stdDeviation="12" result="glow3" />
-                <feFlood floodColor="#ff3b3b" floodOpacity="0.8" result="color3" />
-                <feComposite in="color3" in2="glow3" operator="in" result="coloredGlow3" />
-
-                {/* Close glow layer */}
-                <feGaussianBlur stdDeviation="6" result="glow4" />
-                <feFlood floodColor="#ff3b3b" floodOpacity="1.0" result="color4" />
-                <feComposite in="color4" in2="glow4" operator="in" result="coloredGlow4" />
-
-                <feMerge>
-                  <feMergeNode in="coloredGlow1" />
-                  <feMergeNode in="coloredGlow2" />
-                  <feMergeNode in="coloredGlow3" />
-                  <feMergeNode in="coloredGlow4" />
-                </feMerge>
-              </filter>
-
-              {/* Brighter radial pulse */}
-              <filter
-                id="radial-pulse"
-                x="-900%"
-                y="-600%"
-                width="1900%"
-                height="1300%"
-                filterUnits="objectBoundingBox"
-              >
-                <feGaussianBlur result="pulse">
-                  <animate attributeName="stdDeviation" values="25;40;25" dur="4s" repeatCount="indefinite" />
-                </feGaussianBlur>
-                <feFlood floodOpacity="0.4" result="pulseColor">
-                  <animate
-                    attributeName="flood-color"
-                    values="#ff3b3b;#ff5555;#ff3b3b"
-                    dur="4s"
-                    repeatCount="indefinite"
-                  />
-                </feFlood>
-                <feComposite in="pulseColor" in2="pulse" operator="in" />
-              </filter>
-            </defs>
-
-            {/* Position the light bar in center of expanded viewBox */}
             <g transform="translate(95, 0)">
-              {/* Background pulse glow - radiates in all directions */}
-              <polygon points="1,0 9,8 9,592 1,600" fill="#ff3b3b" filter="url(#radial-pulse)" />
-
-              {/* Main glow layer - radiates in all directions */}
-              <polygon points="1,0 9,8 9,592 1,600" fill="#ff3b3b" filter="url(#radial-glow)" />
-
-              {/* Sharp, unblurred main shape */}
+              {/* Glowing effect layers */}
+              <polygon
+                points="1,0 9,8 9,592 1,600"
+                fill="#ff3b3b"
+                opacity="0.4"
+                className="blur-[20px]"
+              />
+              <polygon
+                points="1,0 9,8 9,592 1,600"
+                fill="#ff3b3b"
+                opacity="0.6"
+                className="blur-[10px]"
+              />
+              {/* Main shape */}
               <polygon points="1,0 9,8 9,592 1,600" fill="#ff3b3b" opacity="1.0" />
             </g>
           </svg>
