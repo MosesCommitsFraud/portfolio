@@ -129,22 +129,25 @@ export function CharacterProfile() {
       </div>
       
       {/* Bottom Info Bar - Red with slanted right edge and text */}
-      <div
-        className="h-[280px] z-50 px-4 font-mono text-black -mt-59"
-        style={{
-          width: '625.5px', // 275px + 0.5px + 350px
-          background: '#ff3b3b',
-          clipPath: 'polygon(100% 86%, 100% 91%, 96% 100%, 0 100%, 0 86%)',
-        }}
-      >
-        <span className="font-bold text-xs absolute left-4 top-4">MODEL LINE: 12.12AA</span>
-        <span className="font-bold text-xs absolute left-1/2 top-4 -translate-x-1/2">FIA DATABASE</span>
-        <span className="text-right text-[10px] leading-tight absolute right-4 top-4">
-          IMAGE NAME: NUX-131010<br />
-          IMAGE TYPE: ARM LINUX KERNEL IMAGE<br />
-          (LZO COMPRESSED)<br />
-          LOAD ADDRESS: 0x02000000
-        </span>
+      <div className="relative w-[625.5px] h-[280px] -mt-59">
+        <div
+          className="absolute inset-0 font-mono text-black"
+          style={{
+            background: '#ff3b3b',
+            clipPath: 'polygon(100% 86%, 100% 91%, 96% 100%, 0 100%, 0 86%)',
+          }}
+        >
+          <div className="absolute inset-0">
+            <span className="absolute left-[4px] top-[243px] text-[11px]">MODEL LINE: 12.12AA</span>
+            <span className="absolute left-[263px] top-[243px] text-[14px]">FIA DATABASE</span>
+            <span className="absolute left-[500px] top-[246px] text-[6px] leading-tight">
+              IMAGE NAME: NUX-131010<br />
+              IMAGE TYPE: ARM LINUX KERNEL IMAGE<br />
+              (LZO COMPRESSED)<br />
+              LOAD ADDRESS: 0x02000000
+            </span>
+          </div>
+        </div>
       </div>
     </div>
   )
