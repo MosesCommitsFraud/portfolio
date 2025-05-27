@@ -129,7 +129,7 @@ export function CharacterProfile() {
       </div>
       
       {/* Bottom Info Bar - Red with slanted right edge and text */}
-      <div className="relative w-[625.5px] h-[280px] -mt-59">
+      <div className="relative w-[625.5px] h-[280px] -mt-59 opacity-90">
         <div
           className="absolute inset-0 font-mono text-black"
           style={{
