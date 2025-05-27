@@ -149,6 +149,44 @@ export function CharacterProfile() {
           </div>
         </div>
       </div>
+
+      {/* Protocol SVG with glow effect */}
+      <div className="relative w-[50px] h-[220px] -mt-20">
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="relative w-[60px] h-[60px]">
+            {/* Glow effect layers */}
+            <div className="absolute inset-0">
+              <img 
+                src="/protocol.svg" 
+                alt="Protocol" 
+                className="w-full h-full object-contain blur-[20px]"
+                style={{ opacity: 0.4 }}
+              />
+            </div>
+            <div className="absolute inset-0">
+              <img 
+                src="/protocol.svg" 
+                alt="Protocol" 
+                className="w-full h-full object-contain blur-[10px]"
+                style={{ opacity: 0.6 }}
+              />
+            </div>
+            {/* Main image */}
+            <img 
+              src="/protocol.svg" 
+              alt="Protocol" 
+              className="w-full h-full object-contain relative z-10"
+              style={{ opacity: 1.0 }}
+            />
+          </div>
+        </div>
+      </div>
+      <span className="absolute left-[550px] top-[772px] text-[6.5px] leading-tight" style={{ color: '#ff3b3b' }}>
+        ONLY CC35 CERTIFIED<br />
+        AND DHSF 5TH CLASS OFFICERS<br />
+        ARE ALLOWED TO MANIPULATE,<br />
+        ACCESS OR DISABLE THIS DEVICE
+      </span>
     </div>
   )
 } 
