@@ -15,7 +15,7 @@ export function CharacterProfile() {
             <div
               className="absolute inset-0 font-mono text-black"
               style={{
-                background: '#ff3b3b',
+                background: '#ff5750',
                 clipPath: 'polygon(0 0, 100% 0, 100% 11.4%, 91% 12.4%, 91% 86.9%, 100% 87.8%, 100% 100%, 90% 100%, 60% 100%, 30% 98.5%, 5% 98.5%, 0 98%, 0 0)',
               }}
             />
@@ -30,7 +30,7 @@ export function CharacterProfile() {
           >
             <defs>
               <filter id="top-glow" x="-20" y="-20" width="320" height="40" filterUnits="userSpaceOnUse">
-                <feDropShadow dx="0" dy="0" stdDeviation="6" floodColor="#ff3b3b" floodOpacity="0.7" />
+                <feDropShadow dx="0" dy="0" stdDeviation="6" floodColor="#ff5750" floodOpacity="0.7" />
               </filter>
               <clipPath id="mugshot-clip">
                 <polygon points="0,0 275,0 275,600 0,600 0,525 -4,519 -4,75 0,69 0,0" />
@@ -49,7 +49,7 @@ export function CharacterProfile() {
             {/* Outer border polygon (red) */}
             <polygon
               points="0,0 275,0 275,600 0,600 0,525 -4,519 -4,75 0,69 0,0"
-              stroke="#ff3b3b"
+              stroke="#ff5750"
               strokeWidth="2"
               fill="none"
               vectorEffect="non-scaling-stroke"
@@ -57,7 +57,7 @@ export function CharacterProfile() {
             {/* Top border glow, perfectly centered for even outward/inward spread */}
             <line
               x1="5" y1="0" x2="270" y2="0"
-              stroke="#ff3b3b"
+              stroke="#ff5750"
               strokeWidth="12"
               opacity="0.4"
               className="blur-[6px]"
@@ -66,7 +66,7 @@ export function CharacterProfile() {
             {/* Tight, bright halo on the border */}
             <polyline
               points="0,0 275,0"
-              stroke="#ff3b3b"
+              stroke="#ff5750"
               strokeWidth="4"
               fill="none"
               opacity="0.5"
@@ -74,7 +74,7 @@ export function CharacterProfile() {
             {/* Crisp, thin top border line */}
             <polyline
               points="0,0 275,0"
-              stroke="#ff3b3b"
+              stroke="#ff5750"
               strokeWidth="2"
               fill="none"
               opacity="1"
@@ -104,23 +104,23 @@ export function CharacterProfile() {
               {/* Glowing effect layers */}
               <polygon
                 points="1,0 9,8 9,592 1,600"
-                fill="#ff3b3b"
+                fill="#ff5750"
                 opacity="0.4"
                 className="blur-[20px]"
               />
               <polygon
                 points="1,0 9,8 9,592 1,600"
-                fill="#ff3b3b"
+                fill="#ff5750"
                 opacity="0.6"
                 className="blur-[10px]"
               />
               {/* Main shape */}
-              <polygon points="1,0 9,8 9,592 1,600" fill="#ff3b3b" opacity="1.0" />
+              <polygon points="1,0 9,8 9,592 1,600" fill="#ff5750" opacity="1.0" />
             </g>
           </svg>
         </div>
 
-        <Card className="w-[350px] h-[600px] bg-black/80 border-2 shadow-none rounded-none relative overflow-visible z-20" style={{ borderColor: '#ff3b3b' }}>
+        <Card className="w-[350px] h-[600px] bg-black/80 border-2 shadow-none rounded-none relative overflow-visible z-20" style={{ borderColor: '#ff5750' }}>
           <div className="relative">
             <div className="p-6 h-full">
               {/* Character Info */}
@@ -128,7 +128,7 @@ export function CharacterProfile() {
                 <div className="space-y-3">
                   <div>
                     {/* Barcode strip above the name, left-aligned with 10px padding */}
-                    <div className="-mt-8 mb-5 pl-[-10px] -ml-3">
+                    <div className="-mt-8 mb-5 pl-[-10px] -ml-1">
                       <BarcodeStrip />
                     </div>
                     <div className="text-sm font-mono uppercase tracking-widest -mt-1.5">NAME</div>
@@ -138,33 +138,33 @@ export function CharacterProfile() {
 
                   <div>
                     <div className="text-sm font-mono uppercase tracking-widest -mt-1.5">CODENAME</div>
-                    <div className="text-lg font-mono">SONGBIRD</div>
+                    <div className="text-lg font-mono font-bold">SONGBIRD</div>
                     <div className="w-full h-px bg-red-400 mt-2.5" />
                   </div>
 
                   <div>
                     <div className="text-sm font-mono uppercase tracking-widest -mt-1.5">AFFILIATION</div>
-                    <div className="text-lg font-mono">FIA</div>
+                    <div className="text-lg font-mono font-bold">FIA</div>
                     <div className="w-full h-px bg-red-400 mt-2.5" />
                   </div>
 
                   <div>
                     <div className="text-sm font-mono uppercase tracking-widest -mt-1.5">RECRUITMENT</div>
-                    <div className="text-lg font-mono">SOLOMON REED; NEW YORK, NY</div>
+                    <div className="text-lg font-mono font-bold">SOLOMON REED; NEW YORK, NY</div>
                     <div className="w-full h-px bg-red-400 mt-2.5" />
                   </div>
 
                   <div>
                     <div className="text-sm font-mono uppercase tracking-widest -mt-1.5">DATE OF BIRTH</div>
-                    <div className="text-lg font-mono">12/29/2045</div>
-                    <div className="w-full h-px bg-red-400 mt-2.5 mb-1" />
+                    <div className="text-lg font-mono font-bold">12/29/2045</div>
+                    <div className="w-full h-px bg-red-400 mt-2.5" />
                   </div>
 
                   <div>
                     <div className="text-sm font-mono uppercase tracking-widest -mt-1.5">
                       LAST POSITION HELD
                     </div>
-                    <div className="text-lg font-mono">N/A</div>
+                    <div className="text-lg font-mono font-bold">N/A</div>
                   </div>
                 </div>
               </div>
@@ -179,7 +179,7 @@ export function CharacterProfile() {
         <div
           className="absolute inset-0 font-mono text-black"
           style={{
-            background: '#ff3b3b',
+            background: '#ff5750',
             clipPath: 'polygon(100% 86%, 100% 91%, 96% 100%, 0 100%, 0 86%)',
           }}
         >
@@ -227,7 +227,7 @@ export function CharacterProfile() {
           </div>
         </div>
         {/* Warning text positioned relative to protocol.svg */}
-        <span className="absolute left-[56px] top-[93px] text-[7px] leading-tight w-[200px]" style={{ color: '#ff3b3b' }}>
+        <span className="absolute left-[56px] top-[93px] text-[7px] leading-tight w-[200px]" style={{ color: '#ff5750' }}>
           ONLY CC35 CERTIFIED<br />
           AND DHSF 5TH CLASS OFFICERS<br />
           ARE ALLOWED TO MANIPULATE,<br />

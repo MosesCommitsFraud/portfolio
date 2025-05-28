@@ -9,7 +9,7 @@ const BLOCK_ROWS = 6;
 const BLOCK_COLS = 112;
 const STRIPE_MIN = 4;
 const STRIPE_MAX = 7;
-const RED = "#ff3b3b";
+const RED = "#ff5750";
 
 function randomInt(min: number, max: number) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
