@@ -10,12 +10,12 @@ export function CharacterProfile() {
         {/* Character Card with Left-side Protrusion */}
         <div className="relative w-[275px] h-[600px] rounded-none overflow-visible">
           {/* Polygon box positioned absolutely */}
-          <div className="absolute -left-[45px] top-0 w-[40px] h-[600px]">
+          <div className="absolute -left-[44px] top-0 w-[40px] h-[600px]">
             <div
               className="absolute inset-0 font-mono text-black"
               style={{
                 background: '#ff3b3b',
-                clipPath: 'polygon(0 0, 100% 0, 100% 11%, 92% 12%, 92% 87%, 100% 88%, 100% 100%, 90% 100%, 60% 100%, 30% 98.5%, 5% 98.5%, 0 98%, 0 0)',
+                clipPath: 'polygon(0 0, 100% 0, 100% 11.4%, 91% 12.4%, 91% 87%, 100% 87.8%, 100% 100%, 90% 100%, 60% 100%, 30% 98.5%, 5% 98.5%, 0 98%, 0 0)',
               }}
             />
           </div>
