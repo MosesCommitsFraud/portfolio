@@ -128,44 +128,44 @@ export function CharacterProfile() {
                 <div className="space-y-3">
                   <div>
                     {/* Barcode strip above the name, left-aligned with 10px padding */}
-                    <div className="-mt-8 mb-5 pl-[-10px] -ml-1">
+                    <div className="-mt-8 mb-5 pl-[-10px] -ml-3">
                       <BarcodeStrip />
                     </div>
-                    <div className="text-sm font-mono uppercase tracking-wider mb-1">NAME</div>
+                    <div className="text-sm font-mono uppercase tracking-wider">NAME</div>
                     <div className="text-xl font-mono font-bold">SONG SO MI</div>
-                    <div className="w-full h-px bg-gradient-to-r from-red-500 to-transparent mt-1" />
+                    <div className="w-full h-px bg-red-400 mt-2.5" />
                   </div>
 
                   <div>
-                    <div className="text-sm font-mono uppercase tracking-wider mb-1">CODENAME</div>
+                    <div className="text-sm font-mono uppercase tracking-wider">CODENAME</div>
                     <div className="text-lg font-mono">SONGBIRD</div>
-                    <div className="w-full h-px bg-gradient-to-r from-red-500 to-transparent mt-1" />
+                    <div className="w-full h-px bg-red-400 mt-2.5" />
                   </div>
 
                   <div>
-                    <div className="text-sm font-mono uppercase tracking-wider mb-1">AFFILIATION</div>
+                    <div className="text-sm font-mono uppercase tracking-wider">AFFILIATION</div>
                     <div className="text-lg font-mono">FIA</div>
-                    <div className="w-full h-px bg-gradient-to-r from-red-500 to-transparent mt-1" />
+                    <div className="w-full h-px bg-red-400 mt-2.5" />
                   </div>
 
                   <div>
-                    <div className="text-sm font-mono uppercase tracking-wider mb-1">RECRUITMENT</div>
+                    <div className="text-sm font-mono uppercase tracking-wider">RECRUITMENT</div>
                     <div className="text-lg font-mono">SOLOMON REED; NEW YORK, NY</div>
-                    <div className="w-full h-px bg-gradient-to-r from-red-500 to-transparent mt-1" />
+                    <div className="w-full h-px bg-red-400 mt-2.5" />
                   </div>
 
                   <div>
-                    <div className="text-sm font-mono uppercase tracking-wider mb-1">DATE OF BIRTH</div>
+                    <div className="text-sm font-mono uppercase tracking-wider">DATE OF BIRTH</div>
                     <div className="text-lg font-mono">12/29/2045</div>
-                    <div className="w-full h-px bg-gradient-to-r from-red-500 to-transparent mt-1" />
+                    <div className="w-full h-px bg-red-400 mt-2.5" />
                   </div>
 
                   <div>
-                    <div className="text-sm font-mono uppercase tracking-wider mb-1">
+                    <div className="text-sm font-mono uppercase tracking-wider">
                       LAST POSITION HELD
                     </div>
                     <div className="text-lg font-mono">N/A</div>
-                    <div className="w-full h-px bg-gradient-to-r from-red-500 to-transparent mt-1" />
+                    <div className="w-full h-px bg-red-400 mt-2.5" />
                   </div>
                 </div>
               </div>
