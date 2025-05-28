@@ -10,13 +10,29 @@ export function CharacterProfile() {
         {/* Character Card with Left-side Protrusion */}
         <div className="relative w-[275px] h-[600px] rounded-none overflow-visible">
           {/* SVG for custom shape with left-side protrusion and consistent border */}
-          <svg 
-            className="absolute inset-0 w-[279px] h-full -left-[4px]" 
-            viewBox="-4.5 0 281 600" 
-            fill="none" 
+          <svg
+            className="absolute inset-0 w-[279px] h-full -left-[4px] z-0"
+            viewBox="-4.5 0 281 600"
+            fill="none"
             xmlns="http://www.w3.org/2000/svg"
             preserveAspectRatio="none"
           >
+            {/* Mugshot image filling the custom shape, clipped by SVG, above black background */}
+            <defs>
+              <clipPath id="mugshot-clip">
+                <polygon points="0,0 275,0 275,600 0,600 0,525 -4,519 -4,75 0,69 0,0" />
+              </clipPath>
+            </defs>
+            <image
+              href="/mugshot.png"
+              x="-4" y="0"
+              width="279"
+              height="600"
+              preserveAspectRatio="xMidYMid slice"
+              clipPath="url(#mugshot-clip)"
+              opacity="1"
+              style={{ objectFit: 'cover' }}
+            />
             {/* Outer border polygon (red) */}
             <polygon
               points="0,0 275,0 275,600 0,600 0,525 -4,519 -4,75 0,69 0,0"
@@ -25,24 +41,8 @@ export function CharacterProfile() {
               fill="none"
               vectorEffect="non-scaling-stroke"
             />
-            {/* Inner card background polygon (black, slightly inset) */}
-            <polygon
-              points="2,2 273,2 273,598 2,598 2,523 -2,519 -2,75 2,69 2,2"
-              fill="rgba(0,0,0,0.8)"
-            />
           </svg>
-          
-          {/* Content container that follows the shape */}
-          <div className="absolute inset-0 p-6">
-            {/* Character Image */}
-            <div className="w-full h-full flex items-center justify-center">
-              <img
-                src="/placeholder.svg?height=320&width=256"
-                alt="Character Portrait"
-                className="w-full h-full object-cover opacity-80"
-              />
-            </div>
-          </div>
+          {/* Content container, no padding, image is already background */}
         </div>
 
         <div className="relative">
