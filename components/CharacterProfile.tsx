@@ -131,41 +131,40 @@ export function CharacterProfile() {
                     <div className="-mt-8 mb-5 pl-[-10px] -ml-3">
                       <BarcodeStrip />
                     </div>
-                    <div className="text-sm font-mono uppercase tracking-wider">NAME</div>
+                    <div className="text-sm font-mono uppercase tracking-wider -mt-1.5">NAME</div>
                     <div className="text-xl font-mono font-bold">SONG SO MI</div>
                     <div className="w-full h-px bg-red-400 mt-2.5" />
                   </div>
 
                   <div>
-                    <div className="text-sm font-mono uppercase tracking-wider">CODENAME</div>
+                    <div className="text-sm font-mono uppercase tracking-wider -mt-1.5">CODENAME</div>
                     <div className="text-lg font-mono">SONGBIRD</div>
                     <div className="w-full h-px bg-red-400 mt-2.5" />
                   </div>
 
                   <div>
-                    <div className="text-sm font-mono uppercase tracking-wider">AFFILIATION</div>
+                    <div className="text-sm font-mono uppercase tracking-wider -mt-1.5">AFFILIATION</div>
                     <div className="text-lg font-mono">FIA</div>
                     <div className="w-full h-px bg-red-400 mt-2.5" />
                   </div>
 
                   <div>
-                    <div className="text-sm font-mono uppercase tracking-wider">RECRUITMENT</div>
+                    <div className="text-sm font-mono uppercase tracking-wider -mt-1.5">RECRUITMENT</div>
                     <div className="text-lg font-mono">SOLOMON REED; NEW YORK, NY</div>
                     <div className="w-full h-px bg-red-400 mt-2.5" />
                   </div>
 
                   <div>
-                    <div className="text-sm font-mono uppercase tracking-wider">DATE OF BIRTH</div>
+                    <div className="text-sm font-mono uppercase tracking-wider -mt-1.5">DATE OF BIRTH</div>
                     <div className="text-lg font-mono">12/29/2045</div>
-                    <div className="w-full h-px bg-red-400 mt-2.5" />
+                    <div className="w-full h-px bg-red-400 mt-2.5 mb-1" />
                   </div>
 
                   <div>
-                    <div className="text-sm font-mono uppercase tracking-wider">
+                    <div className="text-sm font-mono uppercase tracking-wider -mt-1.5">
                       LAST POSITION HELD
                     </div>
                     <div className="text-lg font-mono">N/A</div>
-                    <div className="w-full h-px bg-red-400 mt-2.5" />
                   </div>
                 </div>
               </div>
