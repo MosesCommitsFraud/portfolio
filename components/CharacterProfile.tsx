@@ -2,6 +2,7 @@ import { Card } from "@/components/ui/card"
 import React, { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { cn } from "@/lib/utils";
+import BarcodeStrip from "./BarcodeStrip";
 
 export function CharacterProfile() {
   return (
@@ -15,7 +16,7 @@ export function CharacterProfile() {
               className="absolute inset-0 font-mono text-black"
               style={{
                 background: '#ff3b3b',
-                clipPath: 'polygon(0 0, 100% 0, 100% 11.4%, 91% 12.4%, 91% 87%, 100% 87.8%, 100% 100%, 90% 100%, 60% 100%, 30% 98.5%, 5% 98.5%, 0 98%, 0 0)',
+                clipPath: 'polygon(0 0, 100% 0, 100% 11.4%, 91% 12.4%, 91% 86.9%, 100% 87.8%, 100% 100%, 90% 100%, 60% 100%, 30% 98.5%, 5% 98.5%, 0 98%, 0 0)',
               }}
             />
           </div>
@@ -126,6 +127,10 @@ export function CharacterProfile() {
               <div className="space-y-4">
                 <div className="space-y-3">
                   <div>
+                    {/* Barcode strip above the name, left-aligned with 10px padding */}
+                    <div className="-mt-8 mb-5 pl-[-10px]">
+                      <BarcodeStrip />
+                    </div>
                     <div className="text-red-400 text-sm font-mono uppercase tracking-wider mb-1">NAME</div>
                     <div className="text-red-300 text-xl font-mono font-bold">SONG SO MI</div>
                     <div className="w-full h-px bg-gradient-to-r from-red-500 to-transparent mt-1" />
@@ -160,26 +165,8 @@ export function CharacterProfile() {
                       LAST POSITION HELD
                     </div>
                     <div className="text-red-300 text-lg font-mono">N/A</div>
-                    <div className="w-full h-px bg-gradient-to-r from-red-500 to-transparent mt-1" />
                   </div>
                 </div>
-                {/* Barcode SVG placeholder */}
-                <svg className="mt-4 w-32 h-6" viewBox="0 0 128 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="0" y="0" width="128" height="24" fill="#1a0000" />
-                  <rect x="8" y="4" width="4" height="16" fill="#ff3b3b" />
-                  <rect x="16" y="4" width="2" height="16" fill="#ff3b3b" />
-                  <rect x="22" y="4" width="6" height="16" fill="#ff3b3b" />
-                  <rect x="32" y="4" width="2" height="16" fill="#ff3b3b" />
-                  <rect x="38" y="4" width="4" height="16" fill="#ff3b3b" />
-                  <rect x="46" y="4" width="2" height="16" fill="#ff3b3b" />
-                  <rect x="52" y="4" width="8" height="16" fill="#ff3b3b" />
-                  <rect x="64" y="4" width="2" height="16" fill="#ff3b3b" />
-                  <rect x="70" y="4" width="4" height="16" fill="#ff3b3b" />
-                  <rect x="78" y="4" width="2" height="16" fill="#ff3b3b" />
-                  <rect x="84" y="4" width="6" height="16" fill="#ff3b3b" />
-                  <rect x="94" y="4" width="2" height="16" fill="#ff3b3b" />
-                  <rect x="100" y="4" width="4" height="16" fill="#ff3b3b" />
-                </svg>
               </div>
             </div>
           </div>
