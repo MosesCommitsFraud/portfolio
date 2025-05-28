@@ -9,6 +9,16 @@ export function CharacterProfile() {
       <div className="flex gap-0.5 overflow-visible">
         {/* Character Card with Left-side Protrusion */}
         <div className="relative w-[275px] h-[600px] rounded-none overflow-visible">
+          {/* Polygon box positioned absolutely */}
+          <div className="absolute -left-[45px] top-0 w-[40px] h-[600px]">
+            <div
+              className="absolute inset-0 font-mono text-black"
+              style={{
+                background: '#ff3b3b',
+                clipPath: 'polygon(0 0, 100% 0, 100% 11%, 92% 12%, 92% 87%, 100% 88%, 100% 100%, 90% 100%, 60% 100%, 30% 98.5%, 5% 98.5%, 0 98%, 0 0)',
+              }}
+            />
+          </div>
           {/* SVG for custom shape with left-side protrusion and consistent border */}
           <svg
             className="absolute -top-[20px] left-[-24px] w-[319px] h-[620px] z-0"
