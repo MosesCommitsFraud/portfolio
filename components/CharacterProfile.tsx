@@ -7,21 +7,43 @@ export function CharacterProfile() {
   return (
     <div className="flex flex-col w-full overflow-visible">
       <div className="flex gap-0.5">
-        {/* New Middle Card */}
-        <Card className="w-[275px] h-[600px] bg-black/80 border-2 border-red-500 shadow-none rounded-none relative overflow-visible">
-          <div className="relative">
-            <div className="p-6 h-full">
-              {/* Character Image */}
-              <div className="w-full h-full bg-gradient-to-b from-red-500/30 to-red-900/50 border border-red-500/50 flex items-center justify-center">
-                <img
-                  src="/placeholder.svg?height=320&width=256"
-                  alt="Character Portrait"
-                  className="w-full h-full object-cover opacity-80"
-                />
-              </div>
+        {/* Character Card with Left-side Protrusion */}
+        <div className="relative w-[275px] h-[600px] rounded-none overflow-visible">
+          {/* SVG for custom shape with left-side protrusion and consistent border */}
+          <svg 
+            className="absolute inset-0 w-[279px] h-full -left-[4px]" 
+            viewBox="-4.5 0 281 600" 
+            fill="none" 
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+          >
+            {/* Outer border polygon (red) */}
+            <polygon
+              points="0,0 275,0 275,600 0,600 0,525 -4,519 -4,75 0,69 0,0"
+              stroke="#ff3b3b"
+              strokeWidth="2"
+              fill="none"
+              vectorEffect="non-scaling-stroke"
+            />
+            {/* Inner card background polygon (black, slightly inset) */}
+            <polygon
+              points="2,2 273,2 273,598 2,598 2,523 -2,519 -2,75 2,69 2,2"
+              fill="rgba(0,0,0,0.8)"
+            />
+          </svg>
+          
+          {/* Content container that follows the shape */}
+          <div className="absolute inset-0 p-6">
+            {/* Character Image */}
+            <div className="w-full h-full flex items-center justify-center">
+              <img
+                src="/placeholder.svg?height=320&width=256"
+                alt="Character Portrait"
+                className="w-full h-full object-cover opacity-80"
+              />
             </div>
           </div>
-        </Card>
+        </div>
 
         <div className="relative">
         {/* Neon trapezoid bar, intense glow, 5/6 height, right side, correct shape */}
