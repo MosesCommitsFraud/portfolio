@@ -82,7 +82,7 @@ export function CharacterProfile() {
           </svg>
         </div>
 
-        <Card className="w-[350px] h-[600px] bg-black/80 border-2 border-red-500 shadow-none rounded-none relative overflow-visible z-20">
+        <Card className="w-[350px] h-[600px] bg-black/80 border-2 shadow-none rounded-none relative overflow-visible z-20" style={{ borderColor: '#ff3b3b' }}>
           <div className="relative">
             <div className="p-6 h-full">
               {/* Character Info */}
