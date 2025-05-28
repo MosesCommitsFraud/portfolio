@@ -6,19 +6,21 @@ import { cn } from "@/lib/utils";
 export function CharacterProfile() {
   return (
     <div className="flex flex-col w-full overflow-visible">
-      <div className="flex gap-0.5">
+      <div className="flex gap-0.5 overflow-visible">
         {/* Character Card with Left-side Protrusion */}
         <div className="relative w-[275px] h-[600px] rounded-none overflow-visible">
           {/* SVG for custom shape with left-side protrusion and consistent border */}
           <svg
-            className="absolute inset-0 w-[279px] h-full -left-[4px] z-0"
-            viewBox="-4.5 0 281 600"
+            className="absolute -top-[20px] left-[-24px] w-[319px] h-[620px] z-0"
+            viewBox="-24.5 -21 321 622"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             preserveAspectRatio="none"
           >
-            {/* Mugshot image filling the custom shape, clipped by SVG, above black background */}
             <defs>
+              <filter id="top-glow" x="-20" y="-20" width="320" height="40" filterUnits="userSpaceOnUse">
+                <feDropShadow dx="0" dy="0" stdDeviation="6" floodColor="#ff3b3b" floodOpacity="0.7" />
+              </filter>
               <clipPath id="mugshot-clip">
                 <polygon points="0,0 275,0 275,600 0,600 0,525 -4,519 -4,75 0,69 0,0" />
               </clipPath>
@@ -40,6 +42,31 @@ export function CharacterProfile() {
               strokeWidth="2"
               fill="none"
               vectorEffect="non-scaling-stroke"
+            />
+            {/* Top border glow, perfectly centered for even outward/inward spread */}
+            <line
+              x1="5" y1="0" x2="270" y2="0"
+              stroke="#ff3b3b"
+              strokeWidth="12"
+              opacity="0.4"
+              className="blur-[6px]"
+              strokeLinecap="round"
+            />
+            {/* Tight, bright halo on the border */}
+            <polyline
+              points="0,0 275,0"
+              stroke="#ff3b3b"
+              strokeWidth="4"
+              fill="none"
+              opacity="0.5"
+            />
+            {/* Crisp, thin top border line */}
+            <polyline
+              points="0,0 275,0"
+              stroke="#ff3b3b"
+              strokeWidth="2"
+              fill="none"
+              opacity="1"
             />
           </svg>
           {/* Content container, no padding, image is already background */}
