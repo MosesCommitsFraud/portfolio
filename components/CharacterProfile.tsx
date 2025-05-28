@@ -120,7 +120,7 @@ export function CharacterProfile() {
           </svg>
         </div>
 
-        <Card className="w-[350px] h-[600px] bg-black/80 border-2 shadow-none rounded-none relative overflow-visible z-20" style={{ borderColor: '#ff5750' }}>
+        <Card className="w-[350px] h-[600px] border-2 shadow-none rounded-none relative overflow-visible z-20" style={{ borderColor: '#ff5750', background: '#2b0607' }}>
           <div className="relative">
             <div className="p-6 h-full">
               {/* Character Info */}
@@ -132,31 +132,46 @@ export function CharacterProfile() {
                       <BarcodeStrip />
                     </div>
                     <div className="text-sm font-mono uppercase tracking-widest -mt-1.5">NAME</div>
-                    <div className="text-xl font-mono font-bold">SONG SO MI</div>
+                    <div className="relative inline-block">
+                      <span className="absolute left-0 top-0 blur-[2px] opacity-40 text-[#ff5750] pointer-events-none select-none font-bold text-xl font-mono">SONG SO MI</span>
+                      <span className="relative text-xl font-mono font-bold">SONG SO MI</span>
+                    </div>
                     <div className="w-full h-px bg-red-400 mt-2.5" />
                   </div>
 
                   <div>
                     <div className="text-sm font-mono uppercase tracking-widest -mt-1.5">CODENAME</div>
-                    <div className="text-lg font-mono font-bold">SONGBIRD</div>
+                    <div className="relative inline-block">
+                      <span className="absolute left-0 top-0 blur-[2px] opacity-40 text-[#ff5750] pointer-events-none select-none font-bold text-lg font-mono">SONGBIRD</span>
+                      <span className="relative text-lg font-mono font-bold">SONGBIRD</span>
+                    </div>
                     <div className="w-full h-px bg-red-400 mt-2.5" />
                   </div>
 
                   <div>
                     <div className="text-sm font-mono uppercase tracking-widest -mt-1.5">AFFILIATION</div>
-                    <div className="text-lg font-mono font-bold">FIA</div>
+                    <div className="relative inline-block">
+                      <span className="absolute left-0 top-0 blur-[2px] opacity-40 text-[#ff5750] pointer-events-none select-none font-bold text-lg font-mono">FIA</span>
+                      <span className="relative text-lg font-mono font-bold">FIA</span>
+                    </div>
                     <div className="w-full h-px bg-red-400 mt-2.5" />
                   </div>
 
                   <div>
                     <div className="text-sm font-mono uppercase tracking-widest -mt-1.5">RECRUITMENT</div>
-                    <div className="text-lg font-mono font-bold">SOLOMON REED; NEW YORK, NY</div>
+                    <div className="relative inline-block">
+                      <span className="absolute left-0 top-0 blur-[1px] opacity-40 text-[#ff5750] pointer-events-none select-none font-bold text-lg font-mono">SOLOMON REED; NEW YORK, NY</span>
+                      <span className="relative text-lg font-mono font-bold">SOLOMON REED; NEW YORK, NY</span>
+                    </div>
                     <div className="w-full h-px bg-red-400 mt-2.5" />
                   </div>
 
                   <div>
                     <div className="text-sm font-mono uppercase tracking-widest -mt-1.5">DATE OF BIRTH</div>
-                    <div className="text-lg font-mono font-bold">12/29/2045</div>
+                    <div className="relative inline-block">
+                      <span className="absolute left-0 top-0 blur-[2px] opacity-40 text-[#ff5750] pointer-events-none select-none font-bold text-lg font-mono">12/29/2045</span>
+                      <span className="relative text-lg font-mono font-bold">12/29/2045</span>
+                    </div>
                     <div className="w-full h-px bg-red-400 mt-2.5" />
                   </div>
 
@@ -164,7 +179,10 @@ export function CharacterProfile() {
                     <div className="text-sm font-mono uppercase tracking-widest -mt-1.5">
                       LAST POSITION HELD
                     </div>
-                    <div className="text-lg font-mono font-bold">N/A</div>
+                    <div className="relative inline-block">
+                      <span className="absolute left-0 top-0 blur-[2px] opacity-40 text-[#ff5750] pointer-events-none select-none font-bold text-lg font-mono">N/A</span>
+                      <span className="relative text-lg font-mono font-bold">N/A</span>
+                    </div>
                   </div>
                 </div>
               </div>
