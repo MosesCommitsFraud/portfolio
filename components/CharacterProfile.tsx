@@ -180,13 +180,14 @@ export function CharacterProfile() {
             />
           </div>
         </div>
+        {/* Warning text positioned relative to protocol.svg */}
+        <span className="absolute left-[56px] top-[93px] text-[7px] leading-tight w-[200px]" style={{ color: '#ff3b3b' }}>
+          ONLY CC35 CERTIFIED<br />
+          AND DHSF 5TH CLASS OFFICERS<br />
+          ARE ALLOWED TO MANIPULATE,<br />
+          ACCESS OR DISABLE THIS DEVICE.
+        </span>
       </div>
-      <span className="absolute left-[550px] top-[772px] text-[6.5px] leading-tight" style={{ color: '#ff3b3b' }}>
-        ONLY CC35 CERTIFIED<br />
-        AND DHSF 5TH CLASS OFFICERS<br />
-        ARE ALLOWED TO MANIPULATE,<br />
-        ACCESS OR DISABLE THIS DEVICE
-      </span>
     </div>
   )
 } 
