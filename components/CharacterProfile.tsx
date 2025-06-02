@@ -193,18 +193,18 @@ export function CharacterProfile() {
       </div>
       
       {/* Bottom Info Bar - Red with slanted right edge and text */}
-      <div className="relative w-[625.5px] h-[280px] -mt-59 opacity-90">
+      <div className="relative w-[625.5px] h-[290px] -mt-59 opacity-90">
         <div
           className="absolute inset-0 font-mono text-black"
           style={{
             background: '#ff5750',
-            clipPath: 'polygon(100% 86%, 100% 91%, 96% 100%, 0 100%, 0 86%)',
+            clipPath: 'polygon(100% 83%, 100% 91%, 96% 100%, 0 100%, 0 83%)',
           }}
         >
           <div className="absolute inset-0">
             <span className="absolute left-[4px] top-[243px] text-[11px]">MODEL LINE: 12.12AA</span>
             <span className="absolute left-[263px] top-[243px] text-[14px]">FIA DATABASE</span>
-            <span className="absolute left-[500px] top-[246px] text-[6px] leading-tight">
+            <span className="absolute left-[480px] top-[245.5px] text-[8px] leading-tight">
               IMAGE NAME: NUX-131010<br />
               IMAGE TYPE: ARM LINUX KERNEL IMAGE<br />
               (LZO COMPRESSED)<br />
