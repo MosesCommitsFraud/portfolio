@@ -12,8 +12,8 @@ export default function Page() {
         <div className="absolute inset-0 bg-gradient-to-br from-red-500/10 via-transparent to-transparent" />
 
         {/* Main interface container */}
-        <div className="relative z-10 flex items-center justify-center min-h-screen p-8">
-          <div className="flex -space-x-18 max-w-7xl w-half">
+        <div className="relative z-10 flex items-center justify-center min-h-screen w-full px-8">
+          <div className="flex -space-x-18" style={{ transform: 'translateX(-37.5px)' }}>
             {/* Character Profile Panel */}
             <CharacterProfile />
 
