@@ -13,7 +13,7 @@ export default function Page() {
 
         {/* Main interface container */}
         <div className="relative z-10 flex items-center justify-center min-h-screen p-8">
-          <div className="flex gap-8 max-w-7xl w-half">
+          <div className="flex -space-x-18 max-w-7xl w-half">
             {/* Character Profile Panel */}
             <CharacterProfile />
 
@@ -22,12 +22,6 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <style jsx global>{`
-        .main-vision-mask {
-          mask-image: radial-gradient(ellipse 80% 60% at 50% 50%, white 90%, transparent 100%);
-          -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 50%, white 90%, transparent 100%);
-        }
-      `}</style>
     </>
   )
 }
