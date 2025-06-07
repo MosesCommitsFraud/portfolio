@@ -18,28 +18,51 @@ export function IncidentReport() {
       >
         {/* Background fill */}
         <polygon 
-          points="0,0 450,0 450,550 400,600 0,600" 
+          points="0,0 450,0 450,565 415,600 0,600" 
           fill="#2b0607"
           opacity="1"
         />
         
-        {/* Outer border polygon (red) */}
-        <polygon
-          points="0,0 450,0 450,565 415,600 0,600"
+        {/* Border segments with consistent visual thickness */}
+        {/* Top border */}
+        <line
+          x1="0" y1="0" x2="450" y2="0"
           stroke="#ff5750"
           strokeWidth="2"
-          fill="none"
           vectorEffect="non-scaling-stroke"
         />
         
-        {/* Top border glow */}
+        {/* Right border */}
         <line
-          x1="5" y1="0" x2="445" y2="0"
+          x1="450" y1="0" x2="450" y2="565"
           stroke="#ff5750"
-          strokeWidth="12"
-          opacity="0.4"
-          className="blur-[6px]"
+          strokeWidth="2"
+          vectorEffect="non-scaling-stroke"
+        />
+        
+        {/* Diagonal corner - reduced stroke width for visual consistency */}
+        <line
+          x1="450" y1="565" x2="415" y2="600"
+          stroke="#ff5750"
+          strokeWidth="1.4"
+          vectorEffect="non-scaling-stroke"
           strokeLinecap="round"
+        />
+        
+        {/* Bottom border */}
+        <line
+          x1="415" y1="600" x2="0" y2="600"
+          stroke="#ff5750"
+          strokeWidth="2"
+          vectorEffect="non-scaling-stroke"
+        />
+        
+        {/* Left border */}
+        <line
+          x1="0" y1="600" x2="0" y2="0"
+          stroke="#ff5750"
+          strokeWidth="2"
+          vectorEffect="non-scaling-stroke"
         />
         
         {/* Tight, bright halo on the top border */}
