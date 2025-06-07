@@ -63,23 +63,23 @@ export function IncidentReport() {
 
       {/* Content container - absolutely positioned to break layout constraints */}
       <div className="absolute top-0 left-0 w-[446px] h-[600px] z-10">
-        <div className="pl-[15px] pr-[12px] py-6 h-full">
+        <div className="pl-[19px] pr-[16px] py-6 h-full">
           {/* Analysis Info */}
           <div className="space-y-4 text-red-400">
             <div className="space-y-3">
               <div>
                 {/* Barcode strip above the title */}
-                <div className="-mt-2 mb-1">
+                <div className="-mt-2 mb-1 px-1">
                   <BarcodeStrip />
                 </div>
                 
                 {/* Intercepted text */}
-                <div className="text-red-400 text-[10px] font-mono uppercase tracking-wider -mt-1">
+                <div className="text-red-400 text-[10px] font-mono uppercase tracking-wider -mt-1 px-1">
                   INTERCEPTED BY THE FIA SURVEILLANCE STATION
                 </div>
                 
                 {/* Lambda date */}
-                <div className="text-red-400 text-[10px] font-mono mb-6 -mt-0.5">
+                <div className="text-red-400 text-[10px] font-mono mb-6 -mt-0.5 px-1">
                   LAMBDA 8, 12/22/2076
                 </div>
                 
@@ -89,7 +89,7 @@ export function IncidentReport() {
                   <br />
                   LOC: DOGTOWN
                 </div>
-                <div className="w-full h-px bg-red-400 mt-2.5" />
+                <div className="h-px bg-red-400 mt-2.5 -mx-[19px] ml-[-5px] mr-[130px]" />
               </div>
 
               <div>
@@ -98,7 +98,7 @@ export function IncidentReport() {
                   <span className="absolute left-0 top-0 blur-[2px] opacity-40 text-[#ff5750] pointer-events-none select-none font-bold text-lg font-mono">ATTEMPTED BLACKWALL BREACH</span>
                   <span className="relative text-lg font-mono font-bold">ATTEMPTED BLACKWALL BREACH</span>
                 </div>
-                <div className="w-full h-px bg-red-400 mt-2.5" />
+                <div className="h-px bg-red-400 mt-2.5 -mx-[19px] ml-[-5px] mr-[-5px]" />
               </div>
 
               <div>
@@ -109,7 +109,7 @@ export function IncidentReport() {
                   <span className="absolute left-0 top-0 blur-[2px] opacity-40 text-[#ff5750] pointer-events-none select-none font-bold text-lg font-mono">UNKNOWN</span>
                   <span className="relative text-lg font-mono font-bold">UNKNOWN</span>
                 </div>
-                <div className="w-full h-px bg-red-400 mt-2.5" />
+                <div className="h-px bg-red-400 mt-2.5 -mx-[19px] ml-[-5px] mr-[-5px]" />
               </div>
 
               <div>
@@ -136,6 +136,24 @@ export function IncidentReport() {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* Netwatch box - forced to actual right edge with transform */}
+      <div 
+        className="absolute w-[110px] h-[110px] z-20"
+        style={{ 
+          top: '13px', 
+          left: '327px',
+          transform: 'translateX(0)'
+        }}
+      >
+        <div className="w-full h-full bg-[#2b0607] border-2 flex items-center justify-center" style={{ borderColor: '#ff5750' }}>
+          <img 
+            src="/Netwatch.svg" 
+            alt="Netwatch" 
+            className="w-[100px] h-[100px] object-contain"
+          />
         </div>
       </div>
     </div>
