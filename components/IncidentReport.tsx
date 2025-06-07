@@ -1,4 +1,5 @@
 import { Card } from "@/components/ui/card"
+import BarcodeStrip from "./BarcodeStrip"
 
 export function IncidentReport() {
   // Spacing variables for easy adjustment
@@ -67,6 +68,21 @@ export function IncidentReport() {
           <div className="space-y-4 text-red-400">
             <div className="space-y-3">
               <div>
+                {/* Barcode strip above the title */}
+                <div className="-mt-2 mb-1">
+                  <BarcodeStrip />
+                </div>
+                
+                {/* Intercepted text */}
+                <div className="text-red-400 text-[10px] font-mono uppercase tracking-wider -mt-1">
+                  INTERCEPTED BY THE FIA SURVEILLANCE STATION
+                </div>
+                
+                {/* Lambda date */}
+                <div className="text-red-400 text-[10px] font-mono mb-6 -mt-0.5">
+                  LAMBDA 8, 12/22/2076
+                </div>
+                
                 <div className="text-xl font-mono font-bold uppercase -mt-1.5">INCIDENT REPORT</div>
                 <div className="text-red-400 text-sm font-mono leading-relaxed mt-2">
                   REF: 2077.02.14
