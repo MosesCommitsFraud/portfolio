@@ -106,7 +106,7 @@ export function IncidentReport() {
                   LAMBDA 8, 12/22/2076
                 </div>
                 
-                <div className="text-2xl font-mono font-bold uppercase -mt-1.5">INCIDENT REPORT</div>
+                <div className="text-xl font-mono font-bold uppercase -mt-1.5">INCIDENT REPORT</div>
                 <div className="text-red-400 text-[6px] font-mono leading-relaxed tracking-[1.25px]">
                   THREAT LEVEL: 8
                   <br />
@@ -120,8 +120,8 @@ export function IncidentReport() {
               <div>
                 <div className="text-sm font-mono uppercase tracking-widest -mt-1.5">INCIDENT</div>
                 <div className="relative inline-block">
-                  <span className="absolute left-0 top-0 blur-[2px] opacity-40 text-[#ff5750] pointer-events-none select-none font-bold text-2xl font-mono">ATTEMPTED BLACKWALL BREACH</span>
-                  <span className="relative text-2xl font-mono font-bold">ATTEMPTED BLACKWALL BREACH</span>
+                  <span className="absolute left-0 top-0 blur-[2px] opacity-40 text-[#ff5750] pointer-events-none select-none font-bold text-xl font-mono">ATTEMPTED BLACKWALL BREACH</span>
+                  <span className="relative text-xl font-mono font-bold">ATTEMPTED BLACKWALL BREACH</span>
                 </div>
                 <div className="h-px bg-red-400 mt-2.5 -mx-[19px] ml-[-5px] mr-[-5px]" />
               </div>
@@ -131,8 +131,8 @@ export function IncidentReport() {
                   ENTITY RESPONSIBLE
                 </div>
                 <div className="relative inline-block">
-                  <span className="absolute left-0 top-0 blur-[2px] opacity-40 text-[#ff5750] pointer-events-none select-none font-bold text-2xl font-mono">UNKNOWN</span>
-                  <span className="relative text-2xl font-mono font-bold">UNKNOWN</span>
+                  <span className="absolute left-0 top-0 blur-[2px] opacity-40 text-[#ff5750] pointer-events-none select-none font-bold text-xl font-mono">UNKNOWN</span>
+                  <span className="relative text-xl font-mono font-bold">UNKNOWN</span>
                 </div>
                 <div className="h-px bg-red-400 mt-2.5 -mx-[19px] ml-[-5px] mr-[-5px]" />
               </div>

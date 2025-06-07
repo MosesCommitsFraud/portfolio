@@ -142,8 +142,8 @@ export function CharacterProfile() {
                   <div>
                     <div className="text-sm font-mono uppercase tracking-widest -mt-1.5">CODENAME</div>
                     <div className="relative inline-block">
-                      <span className="absolute left-0 top-0 blur-[2px] opacity-40 text-[#ff5750] pointer-events-none select-none font-bold text-lg font-mono">SONGBIRD</span>
-                      <span className="relative text-lg font-mono font-bold">SONGBIRD</span>
+                      <span className="absolute left-0 top-0 blur-[2px] opacity-40 text-[#ff5750] pointer-events-none select-none font-bold text-xl font-mono">SONGBIRD</span>
+                      <span className="relative text-xl font-mono font-bold">SONGBIRD</span>
                     </div>
                     <div className="w-full h-px bg-red-400 mt-2.5" />
                   </div>
@@ -151,8 +151,8 @@ export function CharacterProfile() {
                   <div>
                     <div className="text-sm font-mono uppercase tracking-widest -mt-1.5">AFFILIATION</div>
                     <div className="relative inline-block">
-                      <span className="absolute left-0 top-0 blur-[2px] opacity-40 text-[#ff5750] pointer-events-none select-none font-bold text-lg font-mono">FIA</span>
-                      <span className="relative text-lg font-mono font-bold">FIA</span>
+                      <span className="absolute left-0 top-0 blur-[2px] opacity-40 text-[#ff5750] pointer-events-none select-none font-bold text-xl font-mono">FIA</span>
+                      <span className="relative text-xl font-mono font-bold">FIA</span>
                     </div>
                     <div className="w-full h-px bg-red-400 mt-2.5" />
                   </div>
@@ -160,8 +160,8 @@ export function CharacterProfile() {
                   <div>
                     <div className="text-sm font-mono uppercase tracking-widest -mt-1.5">RECRUITMENT</div>
                     <div className="relative inline-block">
-                      <span className="absolute left-0 top-0 blur-[1px] opacity-40 text-[#ff5750] pointer-events-none select-none font-bold text-lg font-mono">SOLOMON REED; NEW YORK, NY</span>
-                      <span className="relative text-lg font-mono font-bold">SOLOMON REED; NEW YORK, NY</span>
+                      <span className="absolute left-0 top-0 blur-[2px] opacity-40 text-[#ff5750] pointer-events-none select-none font-bold text-xl font-mono">SOLOMON REED; NEW YORK, NY</span>
+                      <span className="relative text-xl font-mono font-bold">SOLOMON REED; NEW YORK, NY</span>
                     </div>
                     <div className="w-full h-px bg-red-400 mt-2.5" />
                   </div>
@@ -169,8 +169,8 @@ export function CharacterProfile() {
                   <div>
                     <div className="text-sm font-mono uppercase tracking-widest -mt-1.5">DATE OF BIRTH</div>
                     <div className="relative inline-block">
-                      <span className="absolute left-0 top-0 blur-[2px] opacity-40 text-[#ff5750] pointer-events-none select-none font-bold text-lg font-mono">12/29/2045</span>
-                      <span className="relative text-lg font-mono font-bold">12/29/2045</span>
+                      <span className="absolute left-0 top-0 blur-[2px] opacity-40 text-[#ff5750] pointer-events-none select-none font-bold text-xl font-mono">12/29/2045</span>
+                      <span className="relative text-xl font-mono font-bold">12/29/2045</span>
                     </div>
                     <div className="w-full h-px bg-red-400 mt-2.5" />
                   </div>
@@ -180,8 +180,8 @@ export function CharacterProfile() {
                       LAST POSITION HELD
                     </div>
                     <div className="relative inline-block">
-                      <span className="absolute left-0 top-0 blur-[2px] opacity-40 text-[#ff5750] pointer-events-none select-none font-bold text-lg font-mono">N/A</span>
-                      <span className="relative text-lg font-mono font-bold">N/A</span>
+                      <span className="absolute left-0 top-0 blur-[2px] opacity-40 text-[#ff5750] pointer-events-none select-none font-bold text-xl font-mono">N/A</span>
+                      <span className="relative text-xl font-mono font-bold">N/A</span>
                     </div>
                   </div>
                 </div>
