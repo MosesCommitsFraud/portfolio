@@ -67,20 +67,7 @@ export function IncidentReport() {
           <div className="space-y-4 text-red-400">
             <div className="space-y-3">
               <div>
-                <div className="text-sm font-mono uppercase tracking-widest -mt-1.5">PSYCHO-PSYCHOLOGICAL ANALYSIS</div>
-                <div className="relative inline-block">
-                  <span className="absolute left-0 top-0 blur-[2px] opacity-40 text-[#ff5750] pointer-events-none select-none font-bold text-xl font-mono">LAMBDA: 02/02/2019</span>
-                  <span className="relative text-xl font-mono font-bold">LAMBDA: 02/02/2019</span>
-                </div>
-                <div className="w-full h-px bg-red-400 mt-2.5" />
-              </div>
-
-              <div>
-                <div className="text-sm font-mono uppercase tracking-widest -mt-1.5">INCIDENT REPORT</div>
-                <div className="relative inline-block">
-                  <span className="absolute left-0 top-0 blur-[1px] opacity-40 text-[#ff5750] pointer-events-none select-none font-bold text-lg font-mono">AGENT: SONG SO MI</span>
-                  <span className="relative text-lg font-mono font-bold">AGENT: SONG SO MI</span>
-                </div>
+                <div className="text-xl font-mono font-bold uppercase -mt-1.5">INCIDENT REPORT</div>
                 <div className="text-red-400 text-sm font-mono leading-relaxed mt-2">
                   REF: 2077.02.14
                   <br />
